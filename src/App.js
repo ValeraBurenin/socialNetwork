@@ -1,11 +1,17 @@
-import React from 'react';
+import React from 'react'
+import './App.css'
+import Header from './Header'
+import Technologies from './Technologies'
+import Footer from './Footer'
 
-function App() {
+const App = () => {
   return (
     <div>
-      REACT I am
+      <Header />
+      <Technologies />  
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
