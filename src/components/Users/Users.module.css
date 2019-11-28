@@ -1,0 +1,15 @@
+.userPhoto {
+  width: 60px !important;
+}
+
+.userBlock {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userBlock > span {
+  padding: 0;
+  text-align: center;
+}

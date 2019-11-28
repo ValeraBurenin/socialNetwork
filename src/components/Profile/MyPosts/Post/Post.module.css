@@ -1,0 +1,13 @@
+.item {
+    color: #000;
+    margin-top: 10px;
+}
+
+.item.active {
+    color: red;
+}
+
+.item img {
+    width: 50px;
+    border-radius: 30px;
+}
