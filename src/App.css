@@ -13,9 +13,10 @@
 .app-wrapper-content {
     grid-area: c;
     background-color: rgb(235, 233, 233);
+    min-height: 100vh;
 }
 
-.app-wrapper-content img{
+.profileWrapper img{
     width: 100%;
     display: block;
 }

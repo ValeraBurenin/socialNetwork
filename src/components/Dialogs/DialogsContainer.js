@@ -1,7 +1,7 @@
 // import React from "react";
 import Dialogs from './Dialogs'
-import { updateTextInput, addMessageToList } from "../../redux/dialogsReducer";
-import {connect} from 'react-redux'
+import { updateTextInput, addMessageToList } from '@/redux/dialogsReducer'
+import { connect } from 'react-redux'
 // import StoreContext from '../../store-context'
 
 // function DialogsContainer({store}) {
@@ -14,12 +14,12 @@ import {connect} from 'react-redux'
 //         const addMessageInOurBody = () => {
 //           store.dispatch(updateNewMessageBodyCreator())
 //         }
-        
+
 //         let handleAddMessage = (message) => {
 //           store.dispatch(updateNewMessageText(message))
 //         }
 //         return (
-//           <Dialogs 
+//           <Dialogs
 //               updateNewMessageText={handleAddMessage}
 //               sendMessage={addMessageInOurBody}
 //               dialogsPage={state.dialogsPage}
@@ -31,20 +31,20 @@ import {connect} from 'react-redux'
 //   );
 // }
 
-let mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    dialogsPage: state.dialogsPage
+    dialogsPage: state.dialogsPage,
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     sendMessage: () => {
       dispatch(addMessageToList())
     },
-    updateNewMessageText: (message) => {
+    updateNewMessageText: message => {
       dispatch(updateTextInput(message))
-    }
+    },
   }
 }
 

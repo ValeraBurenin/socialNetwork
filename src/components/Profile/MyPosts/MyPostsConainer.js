@@ -1,13 +1,13 @@
 // import React from "react";
-import { updateNewPostText, addPostActionCreactor } from "../../../redux/profileReducer";
-import MyPosts from "./MyPosts";
+import { updateNewPostText, addPostActionCreactor } from '@/redux/profileReducer'
+import MyPosts from './MyPosts'
 // // import StoreContext from '../../../store-context'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 // export default function MyPostsContainer() {
-  
+
 //   return (
-//     <StoreContext.Consumer> 
+//     <StoreContext.Consumer>
 //       { (store) => {
 //         debugger
 //           let state = store.getState()
@@ -15,13 +15,13 @@ import {connect} from 'react-redux'
 //           function addPost () {
 //             store.dispatch(addPostActionCreactor())
 //           }
-        
+
 //             let onPostChange = (text) => {
 //             store.dispatch(updateNewPostText(text))
 //           }
 //           return (
-//           <MyPosts 
-//               updateNewPostText={onPostChange} 
+//           <MyPosts
+//               updateNewPostText={onPostChange}
 //               addPost={addPost}
 //               posts={state.profilePage.posts}
 //               newPostText={state.profilePage.newPostText}
@@ -32,21 +32,21 @@ import {connect} from 'react-redux'
 //   );
 // }
 
-let mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     posts: state.profilePage.posts,
-    newPostText: state.profilePage.newPostText
+    newPostText: state.profilePage.newPostText,
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    updateNewPostText: (text) => {
+    updateNewPostText: text => {
       dispatch(updateNewPostText(text))
     },
     addPost: () => {
       dispatch(addPostActionCreactor())
-    }
+    },
   }
 }
 

@@ -2,11 +2,34 @@
   width: 60px !important;
 }
 
+.selectPage {
+  padding: 10px;
+  height: 100%;
+  
+}
+.selectPage p{
+  margin: 0px;
+}
+
+.selectPage > span {
+  padding: 5px;
+  word-break: break-word;
+}
+
+.selectPageItem {
+  font-weight: bold;
+}
+
+.pageNumber > span {
+  padding: 3px;
+}
+
 .userBlock {
   display: flex;
   padding: 10px;
   align-items: center;
   flex-direction: column;
+  justify-content: left;
 }
 
 .userBlock > span {

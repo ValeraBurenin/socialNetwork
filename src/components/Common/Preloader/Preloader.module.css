@@ -1,0 +1,7 @@
+.preloader {
+  display: flex;
+  height: 100%;
+}
+.preloader img{
+  margin: auto;
+}
